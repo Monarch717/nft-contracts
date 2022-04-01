@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "test": "truffle test",
+    "dashboard": "truffle dashboard",
+    "ganache": "ganache -m 'sure disorder ripple earth present brand sauce wealth admit dismiss crime sponsor'",
+    "prettier": "npx prettier --write 'contracts/**/*.sol'",
+    "remixd" : "remixd -s $(pwd) -u https://remix.ethereum.org",
+    "shopTransactions": "truffle exec ./scripts/Shop_Interaction.js --network dashboard"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.5.0",
+    "@truffle/hdwallet-provider": "^2.0.0"
+  },
+  "devDependencies": {
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "prettier": "^2.6.0",
+    "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "truffle": "^5.5.4",
+    "truffle-assertions": "^0.9.2"
+  }
+}
